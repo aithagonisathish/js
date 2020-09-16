@@ -8,3 +8,13 @@ var add=function(){
     }
     return result;
 }
+var sub=function(){
+    var array= arguments;
+    var result=array[0];
+    for( var i=1;i<array.length;i++){
+
+        result +=array[i];
+       
+    }
+    return result;
+}
