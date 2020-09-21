@@ -7,6 +7,7 @@ var display = document.createElement('form');
 display.setAttribute('name','myform');
 var input=document.createElement("input");
 input.setAttribute('type','text');
+input.setAttribute('autofocus','');
 input.setAttribute('placeholder','0');
 input.setAttribute('name','textview');
 display.append(input);
