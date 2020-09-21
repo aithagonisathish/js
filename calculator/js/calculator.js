@@ -91,7 +91,7 @@ input.style.cssText = 'height:80%;font-size: 30px;direction:RTL;color: transpare
 container.append(btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn0,btnadd,btnc,btndiv,btnmul,btnoper,btnsub,display);
 
 //calculator backend manupulations
-var exp = '',number,operator,equal,allowSR=true ;
+var exp = '',number,operator,equal=true ;
 var textview = document.forms['myform']['textview'];
 function insertnum(num){
     if(equal){
@@ -111,7 +111,7 @@ function insertop(op){
 textview.value = exp + op;
 operator = true ;
 equal = false;
-allowSR = false;
+
 }
 
 function equalTo()
@@ -122,7 +122,7 @@ if(exp){
     textview.value = exp;
     equal = true ;
     number = false;
-    allowSR = true;
+
 
 }
 }
