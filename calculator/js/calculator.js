@@ -125,6 +125,11 @@ if(exp){
 
 
 }
+else{
+    var x = textview.value;
+    x = eval(x);
+    textview.value=x;
+}
 }
 
 function clean()
